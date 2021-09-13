@@ -58,6 +58,8 @@
 # Technical Design
 
 ## Flowchart
+The flowchart for this site was created in Lucid Charts and can be seen below.
+1. <details><summary>Flowchart</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/flowchart/ironworks-flowchart.png"></details>
 
 ## Data models
 
