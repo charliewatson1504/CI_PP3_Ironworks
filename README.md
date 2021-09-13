@@ -69,8 +69,16 @@ The main use cases are below:
 # Technologies Used
 
 ## Languages
-
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ## Frameworks, libraries and other tools
+- [Git](https://git-scm.com/)
+Used for version control of the site and push code from VScode to Github
+- [Github](https://github.com/)
+Used as the remote repository to store the code. Github pages is also where the live site is hosted.
+- [Gitpod](https://www.gitpod.io/)
+Used as the IDE for writing the code and file management
+- [Lucid Charts](https://www.lucidchart.com/)
+Used to create flowchart for the site
 
 # Features
 This site has ?? pages with ?? features
