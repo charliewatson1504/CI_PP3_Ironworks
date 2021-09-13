@@ -1,31 +1,84 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project Title
 
-Welcome Charlie Watson,
+**???? Milestone Project**
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Project Overview
 
-## Reminders
+![Main Mockup](#)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+[Link to live site](#)
 
-## Creating the Heroku app
+---
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# Table of Contents
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#user-goals)
+    - [User Stories](#user-stories)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+- [Technical Design](#technical-design)
+    - [Flowchart](#flowchart)
+    - [Data Models](#data-models)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Validation](#validation)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credit](#credit)
+- [Acknowledgements](#acknowledgements)
+# Project Goals
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## User Stories
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### First Time Visitor
 
-Connect your GitHub repository and deploy as normal.
+# Technical Design
 
-## Constraints
+## Flowchart
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Data models
 
------
-Happy coding!
+# Technologies Used
+
+## Languages
+
+## Frameworks, libraries and other tools
+
+# Features
+This site has ?? pages with ?? features
+## Feature 1 - Home Page
+The homepage has ?? main sections to it:
+
+### Section 1 -
+
+![Feature 1 Section 1](#)
+
+### User Stories covered by this feature
+3- As a First Time Visitor
+
+# Validation
+## Validation
+[Validation]() has been used to validate all of the **** code within the site. All pages have passed with 0 errors and 0 warnings. Click on the below to see each screenshot:
+1. <details><summary>Homepage</summary><img src="#"></details>
+
+# Testing of User Stories
+### 1. As a First Time Visitor
+
+|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---| 
+
+<details><summary>Screenshot to show user story test</summary><img src="#"></details>
+
+# Bugs
+- Bug:
+- Fix:
+
+# Deployment
+
+# Credit
+
+# Acknowledgements
+- To Mo Shami, my mentor, for getting me through this with great advice and support
+- To the Code Institute slack community for finding out great advice, guidance and resources.
