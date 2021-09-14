@@ -8,6 +8,7 @@ All data required to be stored is done so on a google spreadsheet.
 import google_sheet as gs
 
 
+
 def welcome_screen():
     """
     Welcome message to the user along with an option to login or create an
@@ -43,6 +44,15 @@ def login():
     while True:
         answer = input('Enter your username and press enter:')
         if validate_username(answer) is True:
+            user_dict = gs.get_usernames()
+            # credit to https://realpython.com/iterate-through-dictionary-python/#filtering-items
+            new_user_dict = {k: v for k, v in user_dict.items() if k == answer}
+            if new_user_dict.get(answer) == 'User':
+                print('\nMoving onto user section')
+                return False
+            else:
+                print('\nMoving onto staff section')
+                return False
             print('Username found')
             return False
         else:
@@ -76,6 +86,7 @@ def create_account():
             users = gs.USERS
             users.append_row(new_user)
             return False
+
 
 def validate_username(answer):
     """
