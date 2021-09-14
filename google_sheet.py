@@ -45,9 +45,8 @@ def get_usernames():
     With that data it combines the 2 lists into a dictionary with the username
     as the key and the account type as the value.
     """
-    user_data = USERS.get_all_values()
-    usernames = user_data[0]
-    account_types = user_data[1]
+    usernames = USERS.col_values(1)
+    account_types = USERS.col_values(2)
     user_dict = {}
     for username in usernames:
         for account_type in account_types:
