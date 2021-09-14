@@ -75,6 +75,11 @@ def create_account():
 
 
 def validate_username(answer):
+    """
+    validate_username takes the answer from user and checks if
+    username is already in use in google worksheet.
+    Created after seeing function needed in multiple uses.
+    """
     answer = answer.lower()
     usernames = gs.get_usernames().keys()
     if answer in usernames:
