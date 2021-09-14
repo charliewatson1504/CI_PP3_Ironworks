@@ -55,3 +55,22 @@ def get_usernames():
             account_types.remove(account_type)
             break
     return user_dict
+
+
+def get_staff_data(staff):
+    """
+    get_staff takes 1 parameter of staff and puts the data into a dictionary.
+    This is so that it can be used for any staff member even if the
+    amount of staff numbers increases. As the data is stored the same
+    way on each worksheet it can be handled the same way to prevent
+    repeating code.
+    """
+    dates = staff.col_values(1)
+    booking_status = staff.col_values(2)
+    staff_dict = {}
+    for date in dates:
+        for status in booking_status:
+            staff_dict[date] = status
+            booking_status.remove(status)
+            break
+    return staff_dict
