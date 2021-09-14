@@ -40,6 +40,11 @@ KAREN = SHEET.worksheet('karen')
 
 
 def get_usernames():
+    """
+    get_usernames first gets all values from the users google worksheet.
+    With that data it combines the 2 lists into a dictionary with the username
+    as the key and the account type as the value.
+    """
     user_data = USERS.get_all_values()
     usernames = user_data[0]
     account_types = user_data[1]
@@ -50,4 +55,3 @@ def get_usernames():
             account_types.remove(account_type)
             break
     return user_dict
-
