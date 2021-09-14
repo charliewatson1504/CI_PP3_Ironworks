@@ -8,7 +8,6 @@ All data required to be stored is done so on a google spreadsheet.
 import google_sheet as gs
 
 
-
 def welcome_screen():
     """
     Welcome message to the user along with an option to login or create an
@@ -51,7 +50,8 @@ def login():
                 print('\nMoving onto user section')
                 return False
             else:
-                print('\nMoving onto staff section')
+                print('\nStaff section loading...')
+                staff()
                 return False
             print('Username found')
             return False
@@ -100,6 +100,23 @@ def validate_username(answer):
         return True
     else:
         return False
+
+
+def staff():
+    """
+    staff function is to take an input from the user on whether
+    they want to view their bookings or add a new session.
+    The selection they make will invoke the relevant function
+    to take them on in the process.
+    """
+    print('\nStaff section')
+    print('Enter s to view booked sessions')
+    print('or a to add a new session')
+    answer = input('\nEnter choice here:')
+    if answer == 's':
+        print('booked sessions')
+    else:
+        print('add a session')
 
 
 welcome_screen()
