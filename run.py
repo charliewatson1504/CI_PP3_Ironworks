@@ -66,13 +66,16 @@ def create_account():
     usernames and if not used appends it to the users
     google worksheet.
     """
-    # print('\nPlease enter the username you want to use')
-    # answer = input('Enter username:')
-    # answer = answer.lower()
-    # usernames = gs.get_usernames().keys()
-    # if answer in usernames:
-    # print('Please create a new account')
-
+    while True:
+        print('\nPlease enter the username you want to use')
+        answer = input('Enter username:')
+        if validate_username(answer) is True:
+            print(f'\n{answer} is already in use, please chose another')
+        else:
+            new_user = [answer, 'User']
+            users = gs.USERS
+            users.append_row(new_user)
+            return False
 
 def validate_username(answer):
     """
