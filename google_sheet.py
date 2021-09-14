@@ -28,3 +28,26 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('ironworks')
+
+"""
+USERS, STEVE, KAREN allow us to access the speific worksheets within the
+google sheet.
+"""
+
+USERS = SHEET.worksheet('users')
+STEVE = SHEET.worksheet('steve')
+KAREN = SHEET.worksheet('karen')
+
+
+def get_usernames():
+    user_data = USERS.get_all_values()
+    usernames = user_data[0]
+    account_types = user_data[1]
+    user_dict = {}
+    for username in usernames:
+        for account_type in account_types:
+            user_dict[username] = account_type
+            account_types.remove(account_type)
+            break
+    return user_dict
+

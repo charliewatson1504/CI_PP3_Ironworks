@@ -24,12 +24,12 @@ def welcome_screen():
             print('Valid choice. Loading login.....')
             login()
             return False
-        
+
         if answer == 'c':
             print('Valid choice. Loading create account.....')
             create_account()
             return False
-        
+
         print(f'{answer} is an invalid entry, please use l or c')
 
 
@@ -42,4 +42,5 @@ def create_account():
 
 
 print('Welcome to the Ironworks Personal Training Booking System\n')
+print('\nAfter typing your choice please press enter button')
 welcome_screen()
