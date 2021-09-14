@@ -42,10 +42,8 @@ def login():
     """
     while True:
         answer = input('Enter your username and press enter:')
-        answer = answer.lower()
-        usernames = gs.get_usernames().keys()
-        if answer in usernames:
-            print('username found')
+        if validate_username(answer) is True:
+            print('Username found')
             return False
         else:
             print(f'\n{answer} is not a valid username.')
@@ -62,8 +60,27 @@ def login():
 
 
 def create_account():
-    print('Please create a new account')
+    """
+    create_accout function takes an input from the user for a
+    new username, checks it to the list of already used
+    usernames and if not used appends it to the users
+    google worksheet.
+    """
+    # print('\nPlease enter the username you want to use')
+    # answer = input('Enter username:')
+    # answer = answer.lower()
+    # usernames = gs.get_usernames().keys()
+    # if answer in usernames:
+    # print('Please create a new account')
 
+
+def validate_username(answer):
+    answer = answer.lower()
+    usernames = gs.get_usernames().keys()
+    if answer in usernames:
+        return True
+    else:
+        return False
 
 
 welcome_screen()
