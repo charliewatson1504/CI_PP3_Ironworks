@@ -17,7 +17,7 @@ def welcome_screen():
     while True:
         print('Welcome to the Ironworks Personal Training Booking System\n')
         print('After typing your choice please press enter button\n')
-        print('Please enter l to login using your username')
+        print('Please enter l to login')
         print('or c to create an account')
 
         answer = input('Enter your choice here:')
