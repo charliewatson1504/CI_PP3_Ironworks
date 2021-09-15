@@ -180,10 +180,10 @@ def user(name):
         print('or s for booked sessions')
         answer = input('\nEnter choice here:')
         if answer == 'b':
-            book(name)
+            book()
             return False
         elif answer == 's':
-            booked_sessions()
+            booked_sessions(name)
             return False
         else:
             print('\nInvalid choice entered, please try again')
@@ -192,7 +192,7 @@ def user(name):
 def book():
     """
     book function allows the user to see available dates for all
-    staff members
+    staff members and then go on to book an available session.
     """
     print('\nAvailable dates for Steve\n')
     steve = gs.get_staff_data('steve')
@@ -202,6 +202,23 @@ def book():
     print('\nAvailable dates for Karen\n')
     karen = gs.get_staff_data('karen')
     new_karen_dict = {k: v for k, v in karen.items() if v == 'AVAILABLE'}
+    for k, v in new_karen_dict.items():
+        print("{:<15} {:<10}".format(k, v))
+
+
+def booked_sessions(name):
+    """
+    book_sessions function allows the user to see what sessions they have
+    booked with which trainer.
+    """
+    print('\nBooked sessions with Steve\n')
+    steve = gs.get_staff_data('steve')
+    new_steve_dict = {k: v for k, v in steve.items() if v == name}
+    for k, v in new_steve_dict.items():
+        print("{:<15} {:<10}".format(k, v))
+    print('\nBooked sessions with Karen\n')
+    karen = gs.get_staff_data('karen')
+    new_karen_dict = {k: v for k, v in karen.items() if v == name}
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
 
