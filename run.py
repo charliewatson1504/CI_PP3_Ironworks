@@ -212,20 +212,28 @@ def add_session(name):
     add_session takes an input from the user of a date. The input
     is then chceked to make sure it isn't already in use then
     appends the data to the relevant staff worksheet.
+    @param name(str): Username of the user
     """
 
     while True:
         print('\nPlease enter the date of the session you want to add')
         print('Date format to be used is yyyy')
         answer = input('Enter date:')
+
+        # Opens google worksheet of staff member
         staff_sheet = gs.SHEET.worksheet(name)
+
+        # Gets the values from the worksheet of staff member
         staff_data = gs.get_staff_data(name)
 
+        # Checks if date entered is already in google sheet
         if answer in staff_data.keys() is False:
             print(f'\n{answer} is already in use, please chose another')
 
         else:
             new_date = [answer, 'AVAILABLE']
+
+            # Adds new values to the staffs google worksheet
             staff_sheet.append_row(new_date, value_input_option='USER_ENTERED')
             return False
 
