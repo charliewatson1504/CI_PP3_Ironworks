@@ -364,15 +364,32 @@ def booked_sessions(name):
     """
     book_sessions function allows the user to see what sessions they have
     booked with which trainer.
+    @param name(str): Username for user
     """
+
     print('\nBooked sessions with Steve\n')
+
+    # Gets values from steve google worksheet
     steve = gs.get_staff_data('steve')
+
+    # Creates a dictionary from google sheet values and
+    # filters them on the specified username
     new_steve_dict = {k: v for k, v in steve.items() if v == name}
+
+    # Displays a list of the sessions user has booked with steve
     for k, v in new_steve_dict.items():
         print("{:<15} {:<10}".format(k, v))
+
     print('\nBooked sessions with Karen\n')
+
+    # Gets values from steve google worksheet
     karen = gs.get_staff_data('karen')
+
+    # Creates a dictionary from google sheet values and
+    # filters them on the specified username
     new_karen_dict = {k: v for k, v in karen.items() if v == name}
+
+    # Displays a list of the sessions user has booked with karen
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
 
