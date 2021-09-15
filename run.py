@@ -243,18 +243,28 @@ def user(name):
     user is called when a user logs in. It gives a choice to the user
     on what they would like to do next. It then checks the choice
     is valid.
+    @param name(str): Username of user
     """
+
     while True:
         print(f'Welcome {name} to the Ironworks Booking System')
         print('Enter b to book a session')
         print('or s for booked sessions')
         answer = input('\nEnter choice here:')
+
+        # Validates the users entry
         if answer == 'b':
+
+            # Takes user to book a session
             book(name)
             return False
+
         elif answer == 's':
+
+            # Takes user to view their booked sessions
             booked_sessions(name)
             return False
+
         else:
             print('\nInvalid choice entered, please try again')
 
