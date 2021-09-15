@@ -110,10 +110,13 @@ def validate_username(answer):
     username is already in use in google worksheet.
     Created after seeing function needed in multiple uses.
     """
+
     answer = answer.lower()
     usernames = gs.get_usernames().keys()
+
     if answer in usernames:
         return True
+        
     else:
         return False
 
@@ -155,7 +158,7 @@ def staff_sessions(name):
     """
 
     staff_data = gs.get_staff_data(name)
-
+    # prints a list of the sessions for that staff member
     for k, v in staff_data.items():
         print("{:<15} {:<10}".format(k, v))
 
