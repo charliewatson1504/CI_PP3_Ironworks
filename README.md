@@ -1,12 +1,12 @@
-# Project Title
+ Project Title
 
 **???? Milestone Project**
 
 ## Project Overview
 
-![Main Mockup](#)
+![Main Mockup](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/flowchart/mockup.png)
 
-[Link to live site](#)
+[Link to live site](https://ironworks-booking.herokuapp.com/)
 
 ---
 
@@ -62,7 +62,7 @@ The flowchart for this site was created in Lucid Charts and can be seen below.
 1. <details><summary>Flowchart</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/flowchart/ironworks-flowchart.png"></details>
 
 ## Data models
-I have used various data models within this project. Classes have been used to reduce the repetition of code for getting data for the different staff. Dictionaries have been used to pair up the dates with the users who have booked. Lists have also been used throughout the site.
+I have used various data models within this project. Dictionaries have been used to pair up the dates with the users who have booked. Lists have also been used throughout the site.
 
 The main use cases are below:
 
