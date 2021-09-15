@@ -180,12 +180,30 @@ def user(name):
         print('or s for booked sessions')
         answer = input('\nEnter choice here:')
         if answer == 'b':
-            book()
+            book(name)
             return False
         elif answer == 's':
             booked_sessions()
             return False
         else:
             print('\nInvalid choice entered, please try again')
+
+
+def book():
+    """
+    book function allows the user to see available dates for all
+    staff members
+    """
+    print('\nAvailable dates for Steve\n')
+    steve = gs.get_staff_data('steve')
+    new_steve_dict = {k: v for k, v in steve.items() if v == 'AVAILABLE'}
+    for k, v in new_steve_dict.items():
+        print("{:<15} {:<10}".format(k, v))
+    print('\nAvailable dates for Karen\n')
+    karen = gs.get_staff_data('karen')
+    new_karen_dict = {k: v for k, v in karen.items() if v == 'AVAILABLE'}
+    for k, v in new_karen_dict.items():
+        print("{:<15} {:<10}".format(k, v))
+
 
 welcome_screen()
