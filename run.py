@@ -44,7 +44,8 @@ def login():
         answer = input('Enter your username and press enter:')
         if validate_username(answer) is True:
             user_dict = gs.get_usernames()
-            # credit to https://realpython.com/iterate-through-dictionary-python/#filtering-items
+            # credit to
+            # https://realpython.com/iterate-through-dictionary-python/#filtering-items
             new_user_dict = {k: v for k, v in user_dict.items() if k == answer}
             if new_user_dict.get(answer) == 'User':
                 print('\nMoving onto user section')
@@ -215,14 +216,30 @@ def book(name):
     else:
         print('\nInvalid choice entered, please try again')
     print(f'{trainer} selected')
-    print('\nWhat date would you like to book?')
-    print('Please use the format dd-mm-yyyy')
-    date = input('\nEnter date here:')
-    trainer_wks = gs.SHEET.worksheet(trainer)
-    row = trainer_wks.find(date).row
-    col = trainer_wks.find(date).col
-    new_col = col + 1
-    trainer_wks.update_cell(row, new_col, name)
+    while True:
+        print('\nWhat date would you like to book?')
+        print('Please use the format dd-mm-yyyy')
+        date = input('\nEnter date here:')
+        trainer_data = gs.get_staff_data(trainer)
+        new_trainer_dict = {
+            k: v for k, v in trainer_data.items() if k == date
+            }
+        print(new_trainer_dict)
+        for key in new_trainer_dict:
+            trainer_dict_value = new_trainer_dict[key]
+        if trainer_dict_value == 'AVAILABLE':
+            trainer_wks = gs.SHEET.worksheet(trainer)
+            row = trainer_wks.find(date).row
+            col = trainer_wks.find(date).col
+            new_col = col + 1
+            trainer_wks.update_cell(row, new_col, name)
+            return False
+        else:
+            print(f'\n{date} is not available to be booked')
+            print('Please try again...\n')
+            return False
+    
+
 
 
 def booked_sessions(name):
