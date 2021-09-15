@@ -393,5 +393,23 @@ def booked_sessions(name):
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
 
+    while True:
+        print('\nWhat would you like to do now?')
+        print('press b to book another session')
+        print('or e to exit')
+        answer = input('\nEnter your choice here:')
+
+        # Validates the users input
+        if answer == 'b':
+            book(name)
+            return False
+
+        elif answer == 'e':
+            welcome_screen()
+            return False
+
+        else:
+            print('\nInvalid choice entered, please try again')
+
 
 welcome_screen()
