@@ -273,46 +273,88 @@ def book(name):
     """
     book function allows the user to see available dates for all
     staff members and then go on to book an available session.
+    @param name(str): Username of user
     """
+
     print('\nAvailable dates for Steve\n')
+
+    # Gets values from steve google worksheet
     steve = gs.get_staff_data('steve')
+
+    # Puts values from worksheet into a dictionary and is
+    # filtered to entries that have the value of 'AVAILABLE'
     new_steve_dict = {k: v for k, v in steve.items() if v == 'AVAILABLE'}
+
+    # Displays a list of sessions for Steve
     for k, v in new_steve_dict.items():
         print("{:<15} {:<10}".format(k, v))
+
     print('\nAvailable dates for Karen\n')
+
+    # Gets values from karen google worksheet
     karen = gs.get_staff_data('karen')
+
+    # Puts values from worksheet into a dictionary and is
+    # filtered to entries that have the value of 'AVAILABLE'
     new_karen_dict = {k: v for k, v in karen.items() if v == 'AVAILABLE'}
+
+    # Displays a list of sessions for Karen
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
+
     print('\nWho would you like to book with?')
     print('Enter k for Karen')
     print('or s for Steve')
     trainer = input('\nEnter choice here:')
+
+    # Validates the users input
     if trainer == 'k':
         trainer = 'karen'
+
     elif trainer == 's':
         trainer = 'steve'
+
     else:
         print('\nInvalid choice entered, please try again')
+
     print(f'{trainer} selected')
+
     while True:
         print('\nWhat date would you like to book?')
         print('Please use the format dd-mm-yyyy')
         date = input('\nEnter date here:')
+
+        # Gets values from selected staff google worksheet
         trainer_data = gs.get_staff_data(trainer)
+
+        # Puts values into a dictionary filtered on the
+        # date the user input
         new_trainer_dict = {
             k: v for k, v in trainer_data.items() if k == date
             }
-        print(new_trainer_dict)
+
         for key in new_trainer_dict:
             trainer_dict_value = new_trainer_dict[key]
+
+        # Validates if the selected date is available
         if trainer_dict_value == 'AVAILABLE':
+
+            # Opens the specified google worksheet
             trainer_wks = gs.SHEET.worksheet(trainer)
+
+            # Finds the google sheet cell reference
+            # based on the date provided by the user
             row = trainer_wks.find(date).row
             col = trainer_wks.find(date).col
+
+            # Increases the col figure by one so correct
+            # column is updated
             new_col = col + 1
+
+            # Updates the specified cell in the google worksheet
             trainer_wks.update_cell(row, new_col, name)
             return False
+
         else:
             print(f'\n{date} is not available to be booked')
             print('Please try again...\n')
