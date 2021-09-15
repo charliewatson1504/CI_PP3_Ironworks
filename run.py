@@ -119,7 +119,7 @@ def staff(name):
             staff_sessions(name)
             return False
         elif answer == 'a':
-            add_session()
+            add_session(name)
             return False
         else:
             print('Selection is in valid, please try again')
@@ -131,8 +131,7 @@ def staff_sessions(name):
     gets the data from the relvant staff google sheet and presents the data
     back to the user.
     """
-    staff_name = name
-    staff_data = gs.get_staff_data(staff_name)
+    staff_data = gs.get_staff_data(name)
     for k, v in staff_data.items():
         print("{:<15} {:<10}".format(k, v))
     while True:
@@ -140,7 +139,7 @@ def staff_sessions(name):
         print('or to go back to welcome screen enter w')
         answer = input('\nEnter choice here:')
         if answer == 's':
-            add_session()
+            add_session(name)
             return False
         elif answer == 'w':
             welcome_screen()
@@ -149,8 +148,24 @@ def staff_sessions(name):
             print('\nInvalid choice entered, please try again')
 
 
-def add_session():
-    print('add sess')
+def add_session(name):
+    """
+    add_session takes an input from the user of a date. The input
+    is then chceked to make sure it isn't already in use then
+    appends the data to the relevant staff worksheet.
+    """
+    while True:
+        print('\nPlease enter the date of the session you want to add')
+        print('Date format to be used is yyyy')
+        answer = input('Enter date:')
+        staff_sheet = gs.SHEET.worksheet(name)
+        staff_data = gs.get_staff_data(name)
+        if answer in staff_data.keys() is False:
+            print(f'\n{answer} is already in use, please chose another')
+        else:
+            new_date = [answer, 'AVAILABLE']
+            staff_sheet.append_row(new_date, value_input_option='USER_ENTERED')
+            return False
 
 
 welcome_screen()
