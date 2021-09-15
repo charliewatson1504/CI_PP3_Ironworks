@@ -116,7 +116,32 @@ def create_account():
 
             # Adds new username to the users google sheet
             users.append_row(new_user)
+            after_create_account()
             return False
+
+
+def after_create_account():
+    """
+    after create account is called when a user creates a new account
+    """
+
+    while True:
+        print('\nWhat would you like to do now?')
+        print('Enter l to login')
+        print('or press e to exit')
+        answer = input('\nEnter choice here:')
+
+        # Validates the users input
+        if answer == 'l':
+            login()
+            return False
+
+        elif answer == 'e':
+            welcome_screen()
+            return False
+
+        else:
+            print('\nInvalid choice entered, please try again')
 
 
 def validate_username(answer):
