@@ -47,19 +47,28 @@ def login():
 
         # Checks if username entered exists in google sheet
         if validate_username(answer) is True:
+
+            # Gets usernames from the user google worksheet
             user_dict = gs.get_usernames()
 
+            # Filters user_dict to only entries that have a key
+            # of the input given
             # credit to
             # https://realpython.com/iterate-through-dictionary-python/#filtering-items
             new_user_dict = {k: v for k, v in user_dict.items() if k == answer}
 
             if new_user_dict.get(answer) == 'User':
                 print('\nMoving onto user section')
+
+                # If username is a user account takes them to the user section
                 user(answer)
                 return False
 
             else:
                 print('\nStaff section loading...')
+
+                # If username is a staff account takes them to
+                # the staff section
                 staff(answer)
                 return False
 
@@ -72,11 +81,15 @@ def login():
             new_answer = input('Enter choice here:')
 
             if new_answer == 'y':
+
+                # Takes user to create a new account
                 create_account()
                 return False
 
             else:
                 print('Taking you back to the welcome screen....\n')
+
+                # Takes user back to the welcome screen
                 welcome_screen()
                 return False
 
@@ -100,6 +113,8 @@ def create_account():
         else:
             new_user = [answer, 'User']
             users = gs.USERS
+
+            # Adds new username to the users google sheet
             users.append_row(new_user)
             return False
 
@@ -112,11 +127,13 @@ def validate_username(answer):
     """
 
     answer = answer.lower()
+
+    # Gets usernames from the users google sheet
     usernames = gs.get_usernames().keys()
 
     if answer in usernames:
         return True
-        
+
     else:
         return False
 
@@ -138,10 +155,15 @@ def staff(name):
         print('')
 
         if answer == 's':
+
+            # Takes user to view staff sessions
             staff_sessions(name)
             return False
 
         elif answer == 'a':
+
+            # Takes user to add an additional session
+            # to their schedule
             add_session(name)
             return False
 
@@ -157,7 +179,9 @@ def staff_sessions(name):
     @param name(str): Username of staff member
     """
 
+    # Gets data from google sheet for logged in staff member
     staff_data = gs.get_staff_data(name)
+
     # prints a list of the sessions for that staff member
     for k, v in staff_data.items():
         print("{:<15} {:<10}".format(k, v))
@@ -185,14 +209,17 @@ def add_session(name):
     is then chceked to make sure it isn't already in use then
     appends the data to the relevant staff worksheet.
     """
+
     while True:
         print('\nPlease enter the date of the session you want to add')
         print('Date format to be used is yyyy')
         answer = input('Enter date:')
         staff_sheet = gs.SHEET.worksheet(name)
         staff_data = gs.get_staff_data(name)
+
         if answer in staff_data.keys() is False:
             print(f'\n{answer} is already in use, please chose another')
+
         else:
             new_date = [answer, 'AVAILABLE']
             staff_sheet.append_row(new_date, value_input_option='USER_ENTERED')
