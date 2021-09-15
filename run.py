@@ -353,11 +353,41 @@ def book(name):
 
             # Updates the specified cell in the google worksheet
             trainer_wks.update_cell(row, new_col, name)
+
+            print(f'\nGreat! {date} has been booked for you with {trainer}')
+
+            # Takes user to after booking screen
+            after_booking(name)
             return False
 
         else:
             print(f'\n{date} is not available to be booked')
             print('Please try again...\n')
+
+
+def after_booking(name):
+    """
+    after_booking function is called when a user has been successful
+    in booking a new session.
+    @param name(str): Username of user
+    """
+    while True:
+        print('\nWhat would you like to do now?')
+        print('Enter s to view your booked sessions')
+        print('or press e to exit')
+        answer = input('\nEnter choice here:')
+
+        # Validates the users input
+        if answer == 's':
+            booked_sessions(name)
+            return False
+
+        elif answer == 'e':
+            welcome_screen()
+            return False
+
+        else:
+            print('\nInvalid choice entered, please try again')
 
 
 def booked_sessions(name):
