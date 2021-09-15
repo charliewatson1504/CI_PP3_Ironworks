@@ -13,6 +13,7 @@ def welcome_screen():
     Welcome message to the user along with an option to login or create an
     account
     """
+
     while True:
         print('Welcome to the Ironworks Personal Training Booking System\n')
         print('After typing your choice please press enter button\n')
@@ -40,30 +41,40 @@ def login():
     login function first takes an username from the user and then
     checks that against the usernames stored in the google worksheet.
     """
+
     while True:
         answer = input('Enter your username and press enter:')
+
+        # Checks if username entered exists in google sheet
         if validate_username(answer) is True:
             user_dict = gs.get_usernames()
+
             # credit to
             # https://realpython.com/iterate-through-dictionary-python/#filtering-items
             new_user_dict = {k: v for k, v in user_dict.items() if k == answer}
+
             if new_user_dict.get(answer) == 'User':
                 print('\nMoving onto user section')
                 user(answer)
                 return False
+
             else:
                 print('\nStaff section loading...')
                 staff(answer)
                 return False
+
             return False
+
         else:
             print(f'\n{answer} is not a valid username.')
             print('would you like to create an account?')
             print('Enter y for Yes and n for No')
             new_answer = input('Enter choice here:')
+
             if new_answer == 'y':
                 create_account()
                 return False
+
             else:
                 print('Taking you back to the welcome screen....\n')
                 welcome_screen()
@@ -237,9 +248,6 @@ def book(name):
         else:
             print(f'\n{date} is not available to be booked')
             print('Please try again...\n')
-            return False
-    
-
 
 
 def booked_sessions(name):
@@ -258,5 +266,5 @@ def booked_sessions(name):
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
 
-book('charlie')
-# welcome_screen()
+
+welcome_screen()
