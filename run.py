@@ -126,6 +126,7 @@ def staff(name):
     to take them on in the process.
     @param name(str): Username of staff member
     """
+
     while True:
         print('\nStaff section')
         print('Enter s to view booked sessions')
@@ -150,20 +151,27 @@ def staff_sessions(name):
     staff_sessions takes in 1 parameter from function it is called from. It
     gets the data from the relvant staff google sheet and presents the data
     back to the user.
+    @param name(str): Username of staff member
     """
+
     staff_data = gs.get_staff_data(name)
+
     for k, v in staff_data.items():
         print("{:<15} {:<10}".format(k, v))
+
     while True:
         print('\nTo add a new session enter s')
         print('or to go back to welcome screen enter w')
         answer = input('\nEnter choice here:')
+
         if answer == 's':
             add_session(name)
             return False
+
         elif answer == 'w':
             welcome_screen()
             return False
+
         else:
             print('\nInvalid choice entered, please try again')
 
