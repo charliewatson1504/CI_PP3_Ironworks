@@ -35,8 +35,6 @@ google sheet.
 """
 
 USERS = SHEET.worksheet('users')
-# STEVE = SHEET.worksheet('steve')
-# KAREN = SHEET.worksheet('karen')
 
 
 def get_usernames():
@@ -48,6 +46,8 @@ def get_usernames():
     usernames = USERS.col_values(1)
     account_types = USERS.col_values(2)
     user_dict = {}
+
+    # Creates a dictionary from the values from google worksheet
     for username in usernames:
         for account_type in account_types:
             user_dict[username] = account_type
@@ -63,10 +63,13 @@ def get_staff_data(staff):
     amount of staff numbers increases. As the data is stored the same
     way on each worksheet it can be handled the same way to prevent
     repeating code.
+    @param staff(str): Username for staff memeber
     """
     dates = SHEET.worksheet(staff).col_values(1)
     booking_status = SHEET.worksheet(staff).col_values(2)
     staff_dict = {}
+
+    # Creates a dictionary from the values from google worksheet
     for date in dates:
         for status in booking_status:
             staff_dict[date] = status
