@@ -48,12 +48,12 @@ def login():
             new_user_dict = {k: v for k, v in user_dict.items() if k == answer}
             if new_user_dict.get(answer) == 'User':
                 print('\nMoving onto user section')
+                user(answer)
                 return False
             else:
                 print('\nStaff section loading...')
                 staff(answer)
                 return False
-            print('Username found')
             return False
         else:
             print(f'\n{answer} is not a valid username.')
@@ -167,5 +167,25 @@ def add_session(name):
             staff_sheet.append_row(new_date, value_input_option='USER_ENTERED')
             return False
 
+
+def user(name):
+    """
+    user is called when a user logs in. It gives a choice to the user
+    on what they would like to do next. It then checks the choice
+    is valid.
+    """
+    while True:
+        print(f'Welcome {name} to the Ironworks Booking System')
+        print('Enter b to book a session')
+        print('or s for booked sessions')
+        answer = input('\nEnter choice here:')
+        if answer == 'b':
+            book()
+            return False
+        elif answer == 's':
+            booked_sessions()
+            return False
+        else:
+            print('\nInvalid choice entered, please try again')
 
 welcome_screen()
