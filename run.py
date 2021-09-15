@@ -180,7 +180,7 @@ def user(name):
         print('or s for booked sessions')
         answer = input('\nEnter choice here:')
         if answer == 'b':
-            book()
+            book(name)
             return False
         elif answer == 's':
             booked_sessions(name)
@@ -189,7 +189,7 @@ def user(name):
             print('\nInvalid choice entered, please try again')
 
 
-def book():
+def book(name):
     """
     book function allows the user to see available dates for all
     staff members and then go on to book an available session.
@@ -218,9 +218,11 @@ def book():
     print('\nWhat date would you like to book?')
     print('Please use the format dd-mm-yyyy')
     date = input('\nEnter date here:')
-    chosen_trainer = gs.get_staff_data(trainer)
-    new_trainer_dict = {k: v for k, v in chosen_trainer.items() if k == date and v == 'AVAILABLE'}
-    print(new_trainer_dict)
+    trainer_wks = gs.SHEET.worksheet(trainer)
+    row = trainer_wks.find(date).row
+    col = trainer_wks.find(date).col
+    new_col = col + 1
+    trainer_wks.update_cell(row, new_col, name)
 
 
 def booked_sessions(name):
@@ -239,5 +241,5 @@ def booked_sessions(name):
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
 
-
-welcome_screen()
+book('charlie')
+# welcome_screen()
