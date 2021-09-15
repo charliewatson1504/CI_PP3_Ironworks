@@ -124,6 +124,7 @@ def staff(name):
     they want to view their bookings or add a new session.
     The selection they make will invoke the relevant function
     to take them on in the process.
+    @param name(str): Username of staff member
     """
     while True:
         print('\nStaff section')
@@ -131,12 +132,15 @@ def staff(name):
         print('or a to add a new session')
         answer = input('\nEnter choice here:')
         print('')
+
         if answer == 's':
             staff_sessions(name)
             return False
+
         elif answer == 'a':
             add_session(name)
             return False
+
         else:
             print('Selection is in valid, please try again')
 
