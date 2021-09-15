@@ -51,7 +51,7 @@ def login():
                 return False
             else:
                 print('\nStaff section loading...')
-                staff()
+                staff(answer)
                 return False
             print('Username found')
             return False
@@ -102,21 +102,55 @@ def validate_username(answer):
         return False
 
 
-def staff():
+def staff(name):
     """
     staff function is to take an input from the user on whether
     they want to view their bookings or add a new session.
     The selection they make will invoke the relevant function
     to take them on in the process.
     """
-    print('\nStaff section')
-    print('Enter s to view booked sessions')
-    print('or a to add a new session')
-    answer = input('\nEnter choice here:')
-    if answer == 's':
-        print('booked sessions')
-    else:
-        print('add a session')
+    while True:
+        print('\nStaff section')
+        print('Enter s to view booked sessions')
+        print('or a to add a new session')
+        answer = input('\nEnter choice here:')
+        print('')
+        if answer == 's':
+            staff_sessions(name)
+            return False
+        elif answer == 'a':
+            add_session()
+            return False
+        else:
+            print('Selection is in valid, please try again')
+
+
+def staff_sessions(name):
+    """
+    staff_sessions takes in 1 parameter from function it is called from. It
+    gets the data from the relvant staff google sheet and presents the data
+    back to the user.
+    """
+    staff_name = name
+    staff_data = gs.get_staff_data(staff_name)
+    for k, v in staff_data.items():
+        print("{:<15} {:<10}".format(k, v))
+    while True:
+        print('\nTo add a new session enter s')
+        print('or to go back to welcome screen enter w')
+        answer = input('\nEnter choice here:')
+        if answer == 's':
+            add_session()
+            return False
+        elif answer == 'w':
+            welcome_screen()
+            return False
+        else:
+            print('\nInvalid choice entered, please try again')
+
+
+def add_session():
+    print('add sess')
 
 
 welcome_screen()

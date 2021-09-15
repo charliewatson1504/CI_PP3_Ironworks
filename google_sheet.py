@@ -35,8 +35,8 @@ google sheet.
 """
 
 USERS = SHEET.worksheet('users')
-STEVE = SHEET.worksheet('steve')
-KAREN = SHEET.worksheet('karen')
+# STEVE = SHEET.worksheet('steve')
+# KAREN = SHEET.worksheet('karen')
 
 
 def get_usernames():
@@ -64,8 +64,8 @@ def get_staff_data(staff):
     way on each worksheet it can be handled the same way to prevent
     repeating code.
     """
-    dates = staff.col_values(1)
-    booking_status = staff.col_values(2)
+    dates = SHEET.worksheet(staff).col_values(1)
+    booking_status = SHEET.worksheet(staff).col_values(2)
     staff_dict = {}
     for date in dates:
         for status in booking_status:
