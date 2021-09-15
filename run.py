@@ -217,7 +217,7 @@ def add_session(name):
 
     while True:
         print('\nPlease enter the date of the session you want to add')
-        print('Date format to be used is yyyy')
+        print('Date format to be used is dd-mm-yyyy')
         answer = input('Enter date:')
 
         # Opens google worksheet of staff member
@@ -235,7 +235,36 @@ def add_session(name):
 
             # Adds new values to the staffs google worksheet
             staff_sheet.append_row(new_date, value_input_option='USER_ENTERED')
+            print(f'\nGreat! {answer} has been added to your schedule\n')
+            after_add_session(name)
             return False
+
+
+def after_add_session(name):
+    """
+    after add session function is called at the end of adding a new
+    session to a staff schedule. Allows the user to navigate through
+    the app
+    @param name(str): Username of user
+    """
+
+    while True:
+        print('\nWhat would you like to do now?')
+        print('Enter s to view your scheduled sessions')
+        print('or press e to exit')
+        answer = input('\nEnter choice here:')
+
+        # Validates the users input
+        if answer == 's':
+            staff_sessions(name)
+            return False
+
+        elif answer == 'e':
+            welcome_screen()
+            return False
+
+        else:
+            print('\nInvalid choice entered, please try again')
 
 
 def user(name):
