@@ -1,6 +1,6 @@
- Project Title
+# Ironworks Personal Trainer Booking System
 
-**???? Milestone Project**
+**Portfolio Project 3 - Python Essentials**
 
 ## Project Overview
 
@@ -63,8 +63,6 @@ The flowchart for this site was created in Lucid Charts and can be seen below.
 
 ## Data models
 I have used various data models within this project. Dictionaries have been used to pair up the dates with the users who have booked. Lists have also been used throughout the site.
-
-The main use cases are below:
 
 # Technologies Used
 
