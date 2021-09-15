@@ -192,10 +192,14 @@ def staff_sessions(name):
         answer = input('\nEnter choice here:')
 
         if answer == 's':
+
+            # Takes user to add a session to their schedule
             add_session(name)
             return False
 
         elif answer == 'w':
+
+            # Takes user back to the welcome screen
             welcome_screen()
             return False
 
