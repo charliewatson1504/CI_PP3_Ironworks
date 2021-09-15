@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-![Main Mockup](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/flowchart/mockup.png)
+![Main Mockup](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/mockup/mockup.png)
 
 [Link to live site](https://ironworks-booking.herokuapp.com/)
 
