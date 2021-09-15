@@ -204,6 +204,23 @@ def book():
     new_karen_dict = {k: v for k, v in karen.items() if v == 'AVAILABLE'}
     for k, v in new_karen_dict.items():
         print("{:<15} {:<10}".format(k, v))
+    print('\nWho would you like to book with?')
+    print('Enter k for Karen')
+    print('or s for Steve')
+    trainer = input('\nEnter choice here:')
+    if trainer == 'k':
+        trainer = 'karen'
+    elif trainer == 's':
+        trainer = 'steve'
+    else:
+        print('\nInvalid choice entered, please try again')
+    print(f'{trainer} selected')
+    print('\nWhat date would you like to book?')
+    print('Please use the format dd-mm-yyyy')
+    date = input('\nEnter date here:')
+    chosen_trainer = gs.get_staff_data(trainer)
+    new_trainer_dict = {k: v for k, v in chosen_trainer.items() if k == date and v == 'AVAILABLE'}
+    print(new_trainer_dict)
 
 
 def booked_sessions(name):
