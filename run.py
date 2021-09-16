@@ -118,6 +118,9 @@ def create_account():
 
             # Adds new username to the users google sheet
             users.append_row(new_user)
+
+            parq_data = pq.parq_form()
+            pq.update_worksheet(parq_data)
             after_create_account()
             return False
 
