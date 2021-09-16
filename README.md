@@ -174,10 +174,12 @@ Users input data edits content on within Google Sheets
 All data send and received using the Google API through the Google Cloud Platform
 
 ## Third Party Libraries
-- google.oauth2.service_account
-So the application can access the account that the sheet are on with the credentials
+- google.oauth2.service_account:
+
+Allows the application to access the google API without storing the usernames and passwords of the google accounts in the application files its self. A creds.json file is created with all details the API needs to access the google account. In deployment to heroku this information is store in the config var section.
 - gspread:
-Enables the application to read Google Spreadsheets
+
+Allows the application to access google sheets created by the site owner. Using various commands the app can open, select, create or delete worksheets. It can also get cell values, update cell values, append to whole rows, find data within a worksheet or get cell properties. This has allowed the app do everything it does as the data is stored in the google sheet and most all of the functions rely on access the worksheet.
 
 # Features
 This site has ?? pages with ?? features
