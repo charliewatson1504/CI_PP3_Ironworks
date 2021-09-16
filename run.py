@@ -7,6 +7,7 @@ All data required to be stored is done so on a google spreadsheet.
 
 import google_sheet as gs
 import bmi as bm
+import parq as pq
 
 
 def welcome_screen():
