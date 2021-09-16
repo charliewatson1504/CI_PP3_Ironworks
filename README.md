@@ -30,6 +30,11 @@
 - [Acknowledgements](#acknowledgements)
 # Project Goals
 
+To create a system for managing personal training session bookings from both a user perspective and
+a staff member perspective. The experience needs to be simple and easy follow due to this being
+run through command line only. Options need to be given to the user at all times so that they
+don't feel stuck along the way.
+
 ## User Stories
 
 ### First Time Visitor
