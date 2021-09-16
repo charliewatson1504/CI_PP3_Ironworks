@@ -3,7 +3,10 @@ bmi.py is used to hold the class for creating an instance of Person.
 """
 
 
-class Person:
+# pylint doesn't like that the class has 1 method.
+# A future method would be to update the stored data with the bmi score.
+# This isn't possible at this time to do so.
+class Person:  # pylint: disable=too-few-public-methods
     """
     Creates an instance of Person
 
