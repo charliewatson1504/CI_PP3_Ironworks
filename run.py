@@ -439,38 +439,43 @@ def book(name):
         # Gets values from selected staff google worksheet
         trainer_data = gs.get_staff_data(trainer)
 
-        # Puts values into a dictionary filtered on the
-        # date the user input
-        new_trainer_dict = {
-            k: v for k, v in trainer_data.items() if k == date
-            }
+        # Checks to see if date is a valid bookable date
+        if date in trainer_data:
 
-        for key in new_trainer_dict:
-            trainer_dict_value = new_trainer_dict[key]
+            # Puts values into a dictionary filtered on the
+            # date the user input
+            new_trainer_dict = {
+                k: v for k, v in trainer_data.items() if k == date
+                }
 
-        # Validates if the selected date is available
-        if trainer_dict_value == 'AVAILABLE':
+            for key in new_trainer_dict:
+                trainer_dict_value = new_trainer_dict[key]
 
-            # Opens the specified google worksheet
-            trainer_wks = gs.SHEET.worksheet(trainer)
+            # Validates if the selected date is available
+            if trainer_dict_value == 'AVAILABLE':
 
-            # Finds the google sheet cell reference
-            # based on the date provided by the user
-            row = trainer_wks.find(date).row
-            col = trainer_wks.find(date).col
+                # Opens the specified google worksheet
+                trainer_wks = gs.SHEET.worksheet(trainer)
 
-            # Increases the col figure by one so correct
-            # column is updated
-            new_col = col + 1
+                # Finds the google sheet cell reference
+                # based on the date provided by the user
+                row = trainer_wks.find(date).row
+                col = trainer_wks.find(date).col
 
-            # Updates the specified cell in the google worksheet
-            trainer_wks.update_cell(row, new_col, name)
+                # Increases the col figure by one so correct
+                # column is updated
+                new_col = col + 1
 
-            print(f'\nGreat! {date} has been booked for you with {trainer}')
+                # Updates the specified cell in the google worksheet
+                trainer_wks.update_cell(row, new_col, name)
 
-            # Takes user to after booking screen
-            after_booking(name)
-            return False
+                print(
+                    f'\nGreat! {date} has been booked for you with {trainer}'
+                    )
+
+                # Takes user to after booking screen
+                after_booking(name)
+                return False
 
         else:
             print(f'\n{date} is not available to be booked')
