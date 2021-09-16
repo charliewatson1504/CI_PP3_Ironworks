@@ -239,14 +239,23 @@ This section of the app asks the user for 2 inputs of weight and height. It then
 ### User Stories covered by this feature
 
 1 As a **First Time Visitor** I want to be able to book a personal training session.
+
 2 As a **First Time Visitor** I want to be able to choose the trainer I want to book with.
+
 3 As a **First Time Visitor** I want to get feedback from the site through the process.
+
 4 As a **First Time Visitor** I want to be able to check my bmi score.
+
 5 As a **Returning Visitor** I want to be able to view the sessions I have booked.
+
 6 As a **Returning Visitor** I want to be able to book another session.
+
 7 As a **Returning Visitor** I want to be able to check my bmi score.
+
 11 As a **Site Owner** I want users to be able to login to the system and book sessions.
+
 12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
+
 13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
 ## Feature 3 - Staff account section
@@ -270,9 +279,13 @@ A staff member in this section can schedule a new date for users to be able to b
 ### User Stories covered by this feature
 
 8 As a **Staff Member** I want to be able to see who has booked for what sessions.
+
 9 As a **Staff Member** I want to be able to add additional sessions for people to book.
+
 10 As a **Staff Member** I would like a user to only be able book on certain dates.
+
 12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
+
 13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
 # Validation
