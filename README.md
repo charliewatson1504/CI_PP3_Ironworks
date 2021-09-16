@@ -13,10 +13,8 @@
 # Table of Contents
 
 - [Project Goals](#project-goals)
-    - [User Goals](#user-goals)
-    - [Site Owner Goals](#user-goals)
     - [User Stories](#user-stories)
-    - [User Requirements and Expectations](#user-requirements-and-expectations)
+    - [User Manual](#user-manual)
 - [Technical Design](#technical-design)
     - [Flowchart](#flowchart)
     - [Data Models](#data-models)
@@ -50,19 +48,22 @@ don't feel stuck along the way.
 6. As a **Returning Visitor** I want to be able to cancel a booked session.
 7. As a **Returning Visitor** I want to be able to check my bmi score
 
-## Staff Member
+### Staff Member
 
 8. As a **Staff Member** I want to be able to see who has booked for what sessions.
 9. As a **Staff Member** I want to be able to add additional sessions for people to book.
 10. As a **Staff Member** I would like a user to only be able book on certain dates.
 
-## Site Owner Goals
+### Site Owner
 
 11. As a **Site Owner** I want users to be able to login to the system and book sessions.
 12. As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
 13. As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 14. As a **Site Owner** I would like to get basic medical information from the user when they create
 a new account
+
+## User Manual
+
 
 # Technical Design
 
