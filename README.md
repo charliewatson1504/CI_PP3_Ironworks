@@ -81,8 +81,8 @@ This is the first screen that the user sees when the application runs. For the u
 <details><summary>Screenshot of create account screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-2.png"></details>
 
 At the create account screen you will be asked for the username you would like to register with. When you have entered your desired username the system will check to see if it is available. If its not available you should get an error message saying that and asking for you to try again. Once an available username is entered it will take you to complete a basic medical form. Following that you will be presented with 2 options:
-- login - takes the user to their account
-- exit - takes user back to welcome screen
+- login - takes the user to their account.
+- exit - takes user back to welcome screen.
 
 ## 3. Login
 
@@ -92,6 +92,18 @@ Much like with the create account, the login page asks you to enter a username. 
 - book - takes you to the part of the system where you can book a session with one of the trainers.
 - booked sessions - takes you to view the sessions you have booked.
 - BMI calculation - takes you to where with a input of weight and height from the user it can calculate their BMI.
+
+## 4. Book
+
+<details><summary>Screenshot of book screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-4.png"></details>
+
+When selected to go to book a session as a user you will first be shown a list of available dates for each trainer. The system then asks who you would like to book with. It checks to see if your selection is valid and if so it will then ask you for the date you would like to book. Date format to use is dd-mm-yyyy and if a valid date is entered it will confirm this back to you.
+
+<details><summary>Screenshot of booking confirmation screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-5.png"></details>
+
+Following that you are presented with 2 options:
+- booked sessions - takes you to view the sessions you have booked.
+- exit - takes user back to welcome screen.
 
 # Technical Design
 
