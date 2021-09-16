@@ -481,9 +481,8 @@ def booking_date(trainer, name):
                 after_booking(name)
                 return False
 
-        else:
-            print(f'\n{date} is not available to be booked')
-            print('Please try again...\n')
+        print(f'\n{date} is not available to be booked')
+        print('Please try again...\n')
 
 
 def after_booking(name):
