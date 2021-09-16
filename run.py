@@ -155,8 +155,13 @@ def validate_username(answer):
     # Gets usernames from the users google sheet
     usernames = gs.get_usernames().keys()
 
-    if answer in usernames:
-        return True
+    try:
+        if answer in usernames:
+            return True
+
+    except ValueError as e:
+        print(f'{e} not found')
+        return False
 
 
 def calculate_bmi(name):
