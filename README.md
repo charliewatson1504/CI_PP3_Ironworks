@@ -85,6 +85,12 @@ Users input data edits content on within Google Sheets
 - [Google Cloud Platform](https://console.cloud.google.com/)
 All data send and received using the Google API through the Google Cloud Platform
 
+## Third Party Libraries
+- google.oauth2.service_account
+So the application can access the account that the sheet are on with the credentials
+- gspread:
+Enables the application to read Google Spreadsheets
+
 # Features
 This site has ?? pages with ?? features
 ## Feature 1 - Home Page
