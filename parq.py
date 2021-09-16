@@ -25,6 +25,7 @@ def parq_form():
     print('This is just to take some basic medical information')
     print('so that our trainers can act with the duty of care owed.')
 
+    # Collects answers from user
     print('\nAfter each question please enter your answer and press enter')
     full_name = input('\nFull name:')
     email = input('\nEmail address:')
@@ -35,6 +36,7 @@ def parq_form():
         print(cond)
     other_cond = input('\nEnter details here:')
 
+    # Stores all answers in a list to be used by update_worksheet function
     parq_answers = [full_name, email, med_cond, other_cond]
     return parq_answers
 
@@ -46,10 +48,13 @@ def update_worksheet(data):
     @param data(str): answers to be appended to google sheet
     """
 
+    # Opens parq google worksheet
     parq_sheet = gs.SHEET.worksheet('parq')
+
+    # Appends data passed through to the google worksheet
     parq_sheet.append_row(data)
+
     print(f'\n{data[0]} thanks for submitting')
 
 
 parq_data = parq_form()
-update_worksheet(parq_data)
