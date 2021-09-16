@@ -66,34 +66,29 @@ def login():
                 user(answer)
                 return False
 
-            else:
-                print('\nStaff section loading...')
+            print('\nStaff section loading...')
 
-                # If username is a staff account takes them to
-                # the staff section
-                staff(answer)
-                return False
-
+            # If username is a staff account takes them to
+            # the staff section
+            staff(answer)
             return False
 
-        else:
-            print(f'\n{answer} is not a valid username.')
-            print('would you like to create an account?')
-            print('Enter y for Yes and n for No')
-            new_answer = input('Enter choice here:')
+        print(f'\n{answer} is not a valid username.')
+        print('would you like to create an account?')
+        print('Enter y for Yes and n for No')
+        new_answer = input('Enter choice here:')
 
-            if new_answer == 'y':
+        if new_answer == 'y':
 
-                # Takes user to create a new account
-                create_account()
-                return False
+            # Takes user to create a new account
+            create_account()
+            return False
 
-            else:
-                print('Taking you back to the welcome screen....\n')
+        print('Taking you back to the welcome screen....\n')
 
-                # Takes user back to the welcome screen
-                welcome_screen()
-                return False
+        # Takes user back to the welcome screen
+        welcome_screen()
+        return False
 
 
 def create_account():
@@ -141,12 +136,11 @@ def after_create_account():
             login()
             return False
 
-        elif answer == 'e':
+        if answer == 'e':
             welcome_screen()
             return False
 
-        else:
-            print('\nInvalid choice entered, please try again')
+        print('\nInvalid choice entered, please try again')
 
 
 def validate_username(answer):
@@ -163,9 +157,6 @@ def validate_username(answer):
 
     if answer in usernames:
         return True
-
-    else:
-        return False
 
 
 def calculate_bmi(name):
