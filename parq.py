@@ -25,7 +25,7 @@ def parq_form():
     print('This is just to take some basic medical information')
     print('so that our trainers can act with the duty of care owed.')
 
-    print('/nAfter each question please enter your answer and press enter')
+    print('\nAfter each question please enter your answer and press enter')
     full_name = input('\nFull name:')
     email = input('\nEmail address:')
     print('\nDo you have any Injuries or medical conditions')
@@ -38,6 +38,7 @@ def parq_form():
     parq_answers = [full_name, email, med_cond, other_cond]
     return parq_answers
 
+
 def update_worksheet(data):
     """
     update_worksheet takes the returned values from the parq_form function
@@ -47,7 +48,8 @@ def update_worksheet(data):
 
     parq_sheet = gs.SHEET.worksheet('parq')
     parq_sheet.append_row(data)
-    print(f'\n{full_name} thanks for submitting')
+    print(f'\n{data[0]} thanks for submitting')
 
 
-parq_form()
+parq_data = parq_form()
+update_worksheet(parq_data)
