@@ -303,12 +303,30 @@ Pylint
 1. <details><summary>parq.py</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/validation/Pylint/pylint-parq.png"></details>
 
 # Testing of User Stories
-### 1. As a First Time Visitor
+### 1. As a First Time Visitor I want to be able to book a personal training session.
 
-|Feature|Action|Expected Result|Actual Result|
-|---|---|---|---| 
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|User section|At welcome screen enter c to create account. Enter a username. Complete parq form. Enter l to login. Enter username just created. Enter b to book a session. Enter k to book with Karen. Enter an available date with Karen.|App response of Great! "date" has been booked for you with Karen|Works as expected|
+|2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve. Enter an available date with Steve.|App response of Great! "date" has been booked for you with Steve|Works as expected|
 
-<details><summary>Screenshot to show user story test</summary><img src="#"></details>
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-1.png"></details>
+
+<details><summary>Screenshot to show user story test 2</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-2.png"></details>
+<br>
+
+### 2. As a First Time Visitor I want to be able to choose the trainer I want to book with.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|User section|At welcome screen enter c to create account. Enter a username. Complete parq form. Enter l to login. Enter username just created. Enter b to book a session. Enter k to book with Karen.|App response of Karen selected|Works as expected|
+|2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve.|App response of Steve selected|Works as expected|
+
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-2-1.png"></details>
+
+<details><summary>Screenshot to show user story test 2</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-2-2.png"></details>
 
 # Bugs
 - Bug:
