@@ -68,6 +68,7 @@ I have used various data models within this project. Dictionaries have been used
 
 ## Languages
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
 ## Frameworks, libraries and other tools
 - [Git](https://git-scm.com/)
 Used for version control of the site and push code from VScode to Github
@@ -77,6 +78,12 @@ Used as the remote repository to store the code. Github pages is also where the 
 Used as the IDE for writing the code and file management
 - [Lucid Charts](https://www.lucidchart.com/)
 Used to create flowchart for the site
+- [Heroku](https://www.heroku.com)
+Used to deploy the application.
+- [Google Sheets](https://calendar.google.com/)
+Users input data edits content on within Google Sheets
+- [Google Cloud Platform](https://console.cloud.google.com/)
+All data send and received using the Google API through the Google Cloud Platform
 
 # Features
 This site has ?? pages with ?? features
@@ -140,15 +147,15 @@ Steps I took to set up the google API. If you want to do it yourself follow:
 
 1. You need a google account. Either Login or create a Google account.
 2. Go to https://console.cloud.google.com/
-2. Click on the New Project icon.
-3. Add Project name and details.
-4. Under API's and services enable Google Drive and Sheets. These are the ones I have used but there are
+3. Click on the New Project icon.
+4. Add Project name and details.
+5. Under API's and services enable Google Drive and Sheets. These are the ones I have used but there are
 more so you can look through the lirbary.
-5. Create a credential service account. Maybe different if you use different APIs.
-6. Download the credential and upload it to your workspace in a JSON file.
-7. Under API's and services enable Google Drive and Sheets (or ones that you are using).
-8. Compelete the needed tasks to be performed in the documentation for the [Drive](https://developers.google.com/drive/?hl=en_GB) and [Sheets](https://developers.google.com/sheets?hl=en_GB) API.
-9. Add them to your code.
+6. Create a credential service account. Maybe different if you use different APIs.
+7. Download the credential and upload it to your workspace in a JSON file.
+8. Under API's and services enable Google Drive and Sheets (or ones that you are using).
+9. Compelete the needed tasks to be performed in the documentation for the [Drive](https://developers.google.com/drive/?hl=en_GB) and [Sheets](https://developers.google.com/sheets?hl=en_GB) API.
+10. Add them to your code.
 
 # Credit
 
