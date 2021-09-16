@@ -48,7 +48,7 @@ don't feel stuck along the way.
 ### Returning Visitor
 
 5. As a **Returning Visitor** I want to be able to view the sessions I have booked.
-6. As a **Returning Visitor** I want to be able to cancel a booked session.
+6. As a **Returning Visitor** I want to be able to book another session
 7. As a **Returning Visitor** I want to be able to check my bmi score
 
 ### Staff Member
@@ -212,6 +212,42 @@ PARQ form is to gather some basic medical information for the personal trainer b
 14 As a **Site Owner** I would like to get basic medical information from the user when they create
 
 ## Feature 2 - User account section
+User account has 3 main sections to it:
+
+1. Book a session
+2. View booked sessions
+3. Use BMI calculator
+
+### Section 1 - Book a session
+
+One of the largest functions in the app. It starts with showing the available sessions to book for each trainer. Then allows the user to select which trainer they want to book with. Finally the user enters which date they want to book which is checked to see if available and if so the users username is put against that trainer and date in the relevant trainer google worksheet.
+
+![Feature 2 Section 1](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-2-sec-1.png)
+
+### Section 2 - View booked sessions
+
+This displays a list of sessions the user has booked and who with.
+
+![Feature 2 Section 2](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-2-sec-2.png)
+
+### Section 3 - Use BMI calculator
+
+This section of the app asks the user for 2 inputs of weight and height. It then returns the BMI score based on those inputs.
+
+![Feature 2 Section 3](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-2-sec-3.png)
+
+### User Stories covered by this feature
+
+1 As a **First Time Visitor** I want to be able to book a personal training session.
+2 As a **First Time Visitor** I want to be able to choose the trainer I want to book with.
+3 As a **First Time Visitor** I want to get feedback from the site through the process.
+4 As a **First Time Visitor** I want to be able to check my bmi score.
+5 As a **Returning Visitor** I want to be able to view the sessions I have booked.
+6 As a **Returning Visitor** I want to be able to book another session.
+7 As a **Returning Visitor** I want to be able to check my bmi score.
+11 As a **Site Owner** I want users to be able to login to the system and book sessions.
+12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
+13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
 ## Feature 3 - Staff account section
 
