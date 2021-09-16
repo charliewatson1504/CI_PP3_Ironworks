@@ -236,15 +236,14 @@ def staff(name):
             staff_sessions(name)
             return False
 
-        elif answer == 'a':
+        if answer == 'a':
 
             # Takes user to add an additional session
             # to their schedule
             add_session(name)
             return False
 
-        else:
-            print('Selection is in valid, please try again')
+        print('Selection is in valid, please try again')
 
 
 def staff_sessions(name):
