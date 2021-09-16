@@ -258,8 +258,8 @@ def staff_sessions(name):
     staff_data = gs.get_staff_data(name)
 
     # prints a list of the sessions for that staff member
-    for k, v in staff_data.items():
-        print("{:<15} {:<10}".format(k, v))
+    for k, value in staff_data.items():
+        print("{:<15} {:<10}".format(k, value))
 
     while True:
         print('\nTo add a new session enter s')
@@ -397,8 +397,8 @@ def book(name):
     new_steve_dict = {k: v for k, v in steve.items() if v == 'AVAILABLE'}
 
     # Displays a list of sessions for Steve
-    for k, v in new_steve_dict.items():
-        print("{:<15} {:<10}".format(k, v))
+    for k, value in new_steve_dict.items():
+        print("{:<15} {:<10}".format(k, value))
 
     print('\nAvailable dates for Karen\n')
 
@@ -410,8 +410,8 @@ def book(name):
     new_karen_dict = {k: v for k, v in karen.items() if v == 'AVAILABLE'}
 
     # Displays a list of sessions for Karen
-    for k, v in new_karen_dict.items():
-        print("{:<15} {:<10}".format(k, v))
+    for k, value in new_karen_dict.items():
+        print("{:<15} {:<10}".format(k, value))
 
     print('\nWho would you like to book with?')
     print('Enter k for Karen')
@@ -523,8 +523,8 @@ def booked_sessions(name):
     new_steve_dict = {k: v for k, v in steve.items() if v == name}
 
     # Displays a list of the sessions user has booked with steve
-    for k, v in new_steve_dict.items():
-        print("{:<15} {:<10}".format(k, v))
+    for k, value in new_steve_dict.items():
+        print("{:<15} {:<10}".format(k, value))
 
     print('\nBooked sessions with Karen\n')
 
@@ -536,8 +536,8 @@ def booked_sessions(name):
     new_karen_dict = {k: v for k, v in karen.items() if v == name}
 
     # Displays a list of the sessions user has booked with karen
-    for k, v in new_karen_dict.items():
-        print("{:<15} {:<10}".format(k, v))
+    for k, value in new_karen_dict.items():
+        print("{:<15} {:<10}".format(k, value))
 
     while True:
         print('\nWhat would you like to do now?')
