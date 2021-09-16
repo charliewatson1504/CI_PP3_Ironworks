@@ -199,20 +199,19 @@ def calculate_bmi(name):
             booked_sessions(name)
             return False
 
-        elif answer == 'b':
+        if answer == 'b':
 
             # Takes user to book a new session
             book(name)
             return False
 
-        elif answer == 'e':
+        if answer == 'e':
 
             # Takes user back to the welcome screen
             welcome_screen()
             return False
 
-        else:
-            print('Selection is in valid, please try again')
+        print('Selection is in valid, please try again')
 
 
 def staff(name):
