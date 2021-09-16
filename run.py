@@ -159,9 +159,10 @@ def validate_username(answer):
         if answer in usernames:
             return True
 
-    except ValueError as e:
-        print(f'{e} not found')
-        return False
+    except ValueError as err:
+        print(f'{err} not found')
+
+    return False
 
 
 def calculate_bmi(name):
