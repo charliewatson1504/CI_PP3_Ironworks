@@ -73,25 +73,25 @@ each point. The system also takes in user input for passing through to the googl
 <details><summary>Screenshot of welcome screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-1.png"></details>
 
 This is the first screen that the user sees when the application runs. For the user to move on their are 2 options:
-- login - takes the user to login to their account if they have one. [Section 3](#login)
-- create account - takes the user to create a new account if they don't have an account. [Section 2](#create-account)
+- login - takes the user to login to their account if they have one. [Section 3](#3-login)
+- create account - takes the user to create a new account if they don't have an account. [Section 2](#2-create-account)
 
 ## 2. Ceate Account
 
 <details><summary>Screenshot of create account screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-2.png"></details>
 
 At the create account screen you will be asked for the username you would like to register with. When you have entered your desired username the system will check to see if it is available. If its not available you should get an error message saying that and asking for you to try again. Once an available username is entered it will take you to complete a basic medical form. Following that you will be presented with 2 options:
-- login - takes the user to their account. [Section 3](#login)
-- exit - takes user back to welcome screen. [Section 1](#welcome-screen)
+- login - takes the user to their account. [Section 3](#3-login)
+- exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
 ## 3. Login
 
 <details><summary>Screenshot of login screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-3.png"></details>
 
 Much like with the create account, the login page asks you to enter a username. Difference this time is it will check to see if it exists and allow you to move to the next screen. If you login with a user account then you will be presented with 3 options:
-- book - takes you to the part of the system where you can book a session with one of the trainers.
-- booked sessions - takes you to view the sessions you have booked.
-- BMI calculation - takes you to where with a input of weight and height from the user it can calculate their BMI.
+- book - takes you to the part of the system where you can book a session with one of the trainers. [Section 4](#4-book)
+- booked sessions - takes you to view the sessions you have booked. [Section 5](#5-booked-sessions)
+- BMI calculation - takes you to where with a input of weight and height from the user it can calculate their BMI. [Section 6](#6-bmi-calculation)
 
 ## 4. Book
 
@@ -102,16 +102,16 @@ When selected to go to book a session as a user you will first be shown a list o
 <details><summary>Screenshot of booking confirmation screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-5.png"></details>
 
 Following that you are presented with 2 options:
-- booked sessions - takes you to view the sessions you have booked.
-- exit - takes user back to welcome screen. [Section 1](#welcome-screen)
+- booked sessions - takes you to view the sessions you have booked. [Section 5](#5-booked-sessions)
+- exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
 ## 5. Booked Sessions
 
 <details><summary>Screenshot of booked screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-6.png"></details>
 
 The booked sessions screen shows you the session dates that are booked with which trainer. At the end it gives you 2 options:
-- book - takes you to the part of the system where you can book a session with one of the trainers.
-- exit - takes user back to welcome screen. [Section 1](#welcome-screen)
+- book - takes you to the part of the system where you can book a session with one of the trainers. [Section 4](#4-book)
+- exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
 ## 6. BMI calculation
 
@@ -119,24 +119,24 @@ The booked sessions screen shows you the session dates that are booked with whic
 
 The BMI calculation allows you to enter your weight and height and it will return your score. Only the score is provided and no interpretation of what that score means is given. This is for calculation purposes only. Once done it will provide you with 2 options:
 - booked sessions - takes you to view the sessions you have booked.
-- book - takes you to the part of the system where you can book a session with one of the trainers.
-- exit - takes user back to welcome screen. [Section 1](#welcome-screen)
+- book - takes you to the part of the system where you can book a session with one of the trainers. [Section 4](#4-book)
+- exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
 ## 7. View staff session (Staff Account)
 
 <details><summary>Screenshot of staff sessions screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-8.png"></details>
 
 When you login with a staff account you can view booked sessions or add a new session. By selecting view booked sessions it will show you a list of the sessions you have made available and if any of the dates have been booked it will show the name of the person who has booked that session. At the end it gives you 2 options:
-- add a new session - this allows a staff member to make a new date available for people to book.
-- exit - takes user back to welcome screen. [Section 1](#welcome-screen)
+- add a new session - this allows a staff member to make a new date available for people to book. [Section 8](#)
+- exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
 ## 8. Add a new session (Staff Account)
 
 <details><summary>Screenshot of add a new session screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-9.png"></details>
 
 The second option in a staff account is being able to make an additional date available. The system will ask you for the date that you would like to add. Once it has check that this date is not currently in use it will add it and users will be able to book that session. After that has completed you are given 2 options:
-- view scheduled sessions - takes the user to view their sessions.
-- exit - takes user back to welcome screen. [Section 1](#welcome-screen)
+- view scheduled sessions - takes the user to view their sessions. [Section 7](#)
+- exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
 # Technical Design
 
