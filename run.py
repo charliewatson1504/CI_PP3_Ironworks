@@ -355,6 +355,7 @@ def user(name):
         print(f'Welcome {name} to the Ironworks Booking System')
         print('Enter b to book a session')
         print('or s for booked sessions')
+        print('or c for BMI calculation')
         answer = input('\nEnter choice here:')
 
         # Validates the users entry
@@ -368,6 +369,12 @@ def user(name):
 
             # Takes user to view their booked sessions
             booked_sessions(name)
+            return False
+
+        elif answer == 'c':
+
+            # Takes user to BMI calculation
+            calculate_bmi(name)
             return False
 
         else:
