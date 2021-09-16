@@ -3,6 +3,8 @@ parq.py is responsible to handling the PARQ from that is to be
 completed by the user when they create a new account
 """
 
+import google_sheet as gs
+
 # tuple used for conditions so that the list cannot be changed
 CONDITIONS = (
     'Covid symptoms', 'Have cold or flu', 'Have any aches or pains',
@@ -35,6 +37,17 @@ def parq_form():
 
     parq_answers = [full_name, email, med_cond, other_cond]
     return parq_answers
+
+def update_worksheet(data):
+    """
+    update_worksheet takes the returned values from the parq_form function
+    and appends them to the parq google worksheet
+    @param data(str): answers to be appended to google sheet
+    """
+
+    parq_sheet = gs.SHEET.worksheet('parq')
+    parq_sheet.append_row(data)
+    print(f'\n{full_name} thanks for submitting')
 
 
 parq_form()
