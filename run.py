@@ -6,6 +6,7 @@ All data required to be stored is done so on a google spreadsheet.
 """
 
 import google_sheet as gs
+import bmi as bm
 
 
 def welcome_screen():
@@ -162,6 +163,55 @@ def validate_username(answer):
     else:
         return False
 
+
+def calculate_bmi(name):
+    """
+    calculate_bmi function uses the Person class from bmi.py.
+    Inputs are given by the user which is then used to
+    calculate the bmi.
+    @param name(str): Username of user
+    """
+    print('\nWelcome to the bmi calculator')
+    print('All that is provided is your bmi score')
+    print('We do not provide any interpretation of the score')
+    weight = float(input('\nEnter your weight in kilograms:'))
+    height = float(input('\nEnter your height in centimeters:'))
+
+    # calling Person class from bmi.py
+    bmi = bm.Person(weight, height)
+
+    # using the calc_bmi method from Person class
+    calculated_bmi = bmi.calc_bmi()
+
+    print(f'\nYour BMI score is {calculated_bmi}')
+
+    while True:
+        print('\nWhat would you like to do now?')
+        print('Enter s to view booked sessions')
+        print('or b to book a new session')
+        print('or e to exit')
+        answer = input('\nEnter choice here:')
+
+        if answer == 's':
+
+            # Takes user to view their booked sessions
+            booked_sessions(name)
+            return False
+
+        elif answer == 'b':
+
+            # Takes user to book a new session
+            book(name)
+            return False
+
+        elif answer == 'e':
+
+            # Takes user back to the welcome screen
+            welcome_screen()
+            return False
+
+        else:
+            print('Selection is in valid, please try again')
 
 def staff(name):
     """
