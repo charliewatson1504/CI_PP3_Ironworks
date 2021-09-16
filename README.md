@@ -14,7 +14,7 @@
 
 - [Project Goals](#project-goals)
     - [User Stories](#user-stories)
-    - [User Manual](#user-manual)
+- [User Manual](#user-manual)
 - [Technical Design](#technical-design)
     - [Flowchart](#flowchart)
     - [Data Models](#data-models)
@@ -62,8 +62,19 @@ don't feel stuck along the way.
 14. As a **Site Owner** I would like to get basic medical information from the user when they create
 a new account
 
-## User Manual
+# User Manual
 
+Ironworks Personal Trainer Booking System requries user input for the system to work. For this reason the
+sytem has been built in a way that is easy for the user to navigate by providing the user with options at
+each point. The system also takes in user input for passing through to the google sheet where data is stored or it uses it to workout a computation for the user and provides the answer back to them. By chaining the functions together the system can reuse inputs rather than asking the user for the same information again.
+
+## 1. Welcome Screen
+
+<details><summary>Screenshot of welcome screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-1.png"></details>
+
+This is the first screen that the user sees when the application runs. For the user to move on their are 2 options:
+- login - takes the user to login to their account if they have one.
+- create account - takes the user to create a new account if they don't have an account.
 
 # Technical Design
 
