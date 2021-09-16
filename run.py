@@ -263,7 +263,7 @@ def staff_sessions(name):
 
     while True:
         print('\nTo add a new session enter s')
-        print('or to go back to welcome screen enter w')
+        print('or e to exit')
         answer = input('\nEnter choice here:')
 
         if answer == 's':
@@ -272,7 +272,7 @@ def staff_sessions(name):
             add_session(name)
             return False
 
-        if answer == 'w':
+        if answer == 'e':
 
             # Takes user back to the welcome screen
             welcome_screen()
