@@ -18,6 +18,7 @@
 - [Technical Design](#technical-design)
     - [Flowchart](#flowchart)
     - [Data Models](#data-models)
+    - [User Interface](#user-interface)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Validation](#validation)
@@ -147,7 +148,9 @@ The flowchart for this site was created in Lucid Charts and can be seen below.
 ## Data models
 I have used various data models within this project. A Class has been used to for the BMI calc as it can take in attributes and use a method to do the calculation of BMI using those attributes. Dictionaries have been used to pair up the dates with the users who have booked. Lists have also been used throughout the site.
 
+## User Interface
 
+Due to the nature of this project in that the focus is on using the python there isn't much flexibility in making an aesthetically pleasing site. That being said I focused on making the system as easy to use as possible. This is done by giving simple options allowing easier interaction for the user. When more than a single option is needed I have tried to explain what exactly the user needs to enter and if a specific format is needed then show that.
 
 # Technologies Used
 
