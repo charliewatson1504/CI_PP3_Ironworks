@@ -272,14 +272,13 @@ def staff_sessions(name):
             add_session(name)
             return False
 
-        elif answer == 'w':
+        if answer == 'w':
 
             # Takes user back to the welcome screen
             welcome_screen()
             return False
 
-        else:
-            print('\nInvalid choice entered, please try again')
+        print('\nInvalid choice entered, please try again')
 
 
 def add_session(name):
@@ -334,12 +333,11 @@ def after_add_session(name):
             staff_sessions(name)
             return False
 
-        elif answer == 'e':
+        if answer == 'e':
             welcome_screen()
             return False
 
-        else:
-            print('\nInvalid choice entered, please try again')
+        print('\nInvalid choice entered, please try again')
 
 
 def user(name):
@@ -364,20 +362,19 @@ def user(name):
             book(name)
             return False
 
-        elif answer == 's':
+        if answer == 's':
 
             # Takes user to view their booked sessions
             booked_sessions(name)
             return False
 
-        elif answer == 'c':
+        if answer == 'c':
 
             # Takes user to BMI calculation
             calculate_bmi(name)
             return False
 
-        else:
-            print('\nInvalid choice entered, please try again')
+        print('\nInvalid choice entered, please try again')
 
 
 def book(name):
@@ -498,12 +495,11 @@ def after_booking(name):
             booked_sessions(name)
             return False
 
-        elif answer == 'e':
+        if answer == 'e':
             welcome_screen()
             return False
 
-        else:
-            print('\nInvalid choice entered, please try again')
+        print('\nInvalid choice entered, please try again')
 
 
 def booked_sessions(name):
@@ -550,12 +546,11 @@ def booked_sessions(name):
             book(name)
             return False
 
-        elif answer == 'e':
+        if answer == 'e':
             welcome_screen()
             return False
 
-        else:
-            print('\nInvalid choice entered, please try again')
+        print('\nInvalid choice entered, please try again')
 
 
 welcome_screen()
