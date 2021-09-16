@@ -8,6 +8,8 @@
 
 [Link to live site](https://ironworks-booking.herokuapp.com/)
 
+[Link to google sheet used for the data storage](https://docs.google.com/spreadsheets/d/1Y5uWBQ5PCS4LM2vL3NYcshhGn-3tMyMbel-V3aOZBSQ/edit?usp=sharing)
+
 ---
 
 # Table of Contents
@@ -182,16 +184,36 @@ Allows the application to access the google API without storing the usernames an
 Allows the application to access google sheets created by the site owner. Using various commands the app can open, select, create or delete worksheets. It can also get cell values, update cell values, append to whole rows, find data within a worksheet or get cell properties. This has allowed the app do everything it does as the data is stored in the google sheet and most all of the functions rely on access the worksheet.
 
 # Features
-This site has ?? pages with ?? features
-## Feature 1 - Home Page
-The homepage has ?? main sections to it:
+This site has 3 features
+## Feature 1 - Create account
+Create account has 2 main sections to it:
 
-### Section 1 -
+1. Choose a username
+2. PARQ form
 
-![Feature 1 Section 1](#)
+### Section 1 - Choose a username
+
+Allows a user to create an account if they don't have one. Input username is checked to see if it is available. If that passes then the username is appended to the users google worksheet and the app takes the user to the PARQ form.
+
+![Feature 1 Section 1](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-1-sec-1.png)
+
+### Section 2 - PARQ form
+
+PARQ form is to gather some basic medical information for the personal trainer before the user comes in for a session. The app asks the user for some inputs and then those inputs are stores within the parq google worksheet.
+
+![Feature 1 Section 2](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-1-sec-2.png)
 
 ### User Stories covered by this feature
-3- As a First Time Visitor
+
+3 As a **First Time Visitor** I want to get feedback from the site through the process.
+
+12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
+
+14 As a **Site Owner** I would like to get basic medical information from the user when they create
+
+## Feature 2 - User account section
+
+## Feature 3 - Staff account section
 
 # Validation
 ## Validation
