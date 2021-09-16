@@ -209,7 +209,7 @@ PARQ form is to gather some basic medical information for the personal trainer b
 
 12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
 
-14 As a **Site Owner** I would like to get basic medical information from the user when they create
+14 As a **Site Owner** I would like to get basic medical information from the user when they create a new account
 
 ## Feature 2 - User account section
 User account has 3 main sections to it:
@@ -250,6 +250,30 @@ This section of the app asks the user for 2 inputs of weight and height. It then
 13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
 ## Feature 3 - Staff account section
+Staff account has 2 main sections to it:
+
+1. View scheduled sessions
+2. Add a new scheduled session
+
+### Section 1 - View scheduled sessions
+
+Displays the scheduled sessions for users with a staff account. It gets the data from the relevant google worksheet and shows the dates they currently have scheduled and either 'AVAILABLE' if not yet booked by a user or the users username.
+
+![Feature 3 Section 1](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-3-sec-1.png)
+
+### Section 2 - Add a new scheduled session
+
+A staff member in this section can schedule a new date for users to be able to book to. The app asks for a date and checks to see if the date isn't currently in use. If not it adds it to the relevant google sheet and makes it 'AVAILABLE' for users to book a session.
+
+![Feature 3 Section 2](https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/features/feature-3-sec-2.png)
+
+### User Stories covered by this feature
+
+8 As a **Staff Member** I want to be able to see who has booked for what sessions.
+9 As a **Staff Member** I want to be able to add additional sessions for people to book.
+10 As a **Staff Member** I would like a user to only be able book on certain dates.
+12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
+13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
 # Validation
 ## Validation
