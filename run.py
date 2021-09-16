@@ -426,6 +426,14 @@ def book(name):
         print('\nInvalid choice entered, please try again')
 
     print(f'{trainer} selected')
+    booking_date(trainer, name)
+
+
+def booking_date(trainer, name):
+    """
+    takes the user through the booking date they would like
+    @param trainer(str): Trainer selected in book function
+    """
 
     while True:
         print('\nWhat date would you like to book?')
