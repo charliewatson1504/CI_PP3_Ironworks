@@ -84,6 +84,15 @@ At the create account screen you will be asked for the username you would like t
 - login - takes the user to their account
 - exit - takes user back to welcome screen
 
+## 3. Login
+
+<details><summary>Screenshot of login screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-3.png"></details>
+
+Much like with the create account, the login page asks you to enter a username. Difference this time is it will check to see if it exists and allow you to move to the next screen. If you login with a user account then you will be presented with 3 options:
+- book - takes you to the part of the system where you can book a session with one of the trainers.
+- booked sessions - takes you to view the sessions you have booked.
+- BMI calculation - takes you to where with a input of weight and height from the user it can calculate their BMI.
+
 # Technical Design
 
 ## Flowchart
