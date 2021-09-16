@@ -124,7 +124,11 @@ The BMI calculation allows you to enter your weight and height and it will retur
 
 ## 7. View staff session (Staff Account)
 
-<details><summary>Screenshot of booked screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-7.png"></details>
+<details><summary>Screenshot of booked screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-8.png"></details>
+
+When you login with a staff account you can view booked sessions or add a new session. By selecting view booked sessions it will show you a list of the sessions you have made available and if any of the dates have been booked it will show the name of the person who has booked that session. At the end it gives you 2 options:
+- add a new session - this allows a staff member to make a new date available for people to book.
+- exit - takes user back to welcome screen.
 
 # Technical Design
 
