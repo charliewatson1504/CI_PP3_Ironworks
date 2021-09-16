@@ -105,6 +105,14 @@ Following that you are presented with 2 options:
 - booked sessions - takes you to view the sessions you have booked.
 - exit - takes user back to welcome screen.
 
+## 5. Booked Sessions
+
+<details><summary>Screenshot of booked screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-6.png"></details>
+
+The booked sessions screen shows you the session dates that are booked with which trainer. At the end it gives you 2 options:
+- book - takes you to the part of the system where you can book a session with one of the trainers.
+- exit - takes user back to welcome screen.
+
 # Technical Design
 
 ## Flowchart
