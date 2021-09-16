@@ -55,6 +55,3 @@ def update_worksheet(data):
     parq_sheet.append_row(data)
 
     print(f'\n{data[0]} thanks for submitting')
-
-
-parq_data = parq_form()
