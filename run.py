@@ -213,6 +213,7 @@ def calculate_bmi(name):
         else:
             print('Selection is in valid, please try again')
 
+
 def staff(name):
     """
     staff function is to take an input from the user on whether
