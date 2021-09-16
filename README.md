@@ -113,6 +113,19 @@ The booked sessions screen shows you the session dates that are booked with whic
 - book - takes you to the part of the system where you can book a session with one of the trainers.
 - exit - takes user back to welcome screen.
 
+## 6. BMI calculation
+
+<details><summary>Screenshot of BMI calculation screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-7.png"></details>
+
+The BMI calculation allows you to enter your weight and height and it will return your score. Only the score is provided and no interpretation of what that score means is given. This is for calculation purposes only. Once done it will provide you with 2 options:
+- booked sessions - takes you to view the sessions you have booked.
+- book - takes you to the part of the system where you can book a session with one of the trainers.
+- exit - takes user back to welcome screen.
+
+## 7. View staff session (Staff Account)
+
+<details><summary>Screenshot of booked screen</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/user-manual/user-manual-7.png"></details>
+
 # Technical Design
 
 ## Flowchart
