@@ -16,7 +16,10 @@ class Person:
         self.height = height
 
     def calc_bmi(self):
-
+        """
+        calc_bmi takes the weight and height of the person and
+        calculates their bmi
+        """
         # Calculates bmi from params
         bmi = self.weight/((self.height/100)*(self.height/100))
 
