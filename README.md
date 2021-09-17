@@ -381,6 +381,14 @@ Follows same test as user story 4
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-4.png"></details>
 <br>
 
+### 8. As a Staff Member I want to be able to see who has booked for what sessions.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|Login|At welcome screen enter l to login. Enter username karen. Enter s to view scheduled sessions|App displays scheduled sessions|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-8.png"></details>
+
 # Bugs
 - Bug:
 - Fix:
