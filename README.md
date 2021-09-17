@@ -422,13 +422,20 @@ Follows same test as user story 1
 
 ### 12. As a Site Owner I want to be able to validate all of the user input and provide feedback if input is invalid.
 
-Follows same test as user story 1
-
 |Test|Feature|Action|Expected Result|Actual Result|
 |---|---|---|---|---|
 |1|Welcome Screen|At welcome screen enter f which is not a stated option.|App response f is an invalid entry, please use l or c|Works as expected|
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-12.png"></details>
+<br>
+
+### 13. As a Site Owner I would like users to be able to get back to the welcome screen at any point through the process.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter k to book with Karen. Enter an available date with Karen. Enter e to exit|App returns to the welcome screen|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-13.png"></details>
 
 # Bugs
 - Bug:
