@@ -496,6 +496,10 @@ more so you can look through the lirbary.
 
 # Credit
 
+- This [Stack overflow](https://stackoverflow.com/questions/17330139/python-printing-a-dictionary-as-a-horizontal-table-with-headers) post for helping with displaying a dictionary as a table in the console
+- This post on [Real Python](https://realpython.com/iterate-through-dictionary-python/#filtering-items) for helping with iterating through a dictionary and filtering the values
+- This post on [geeksforgeeks](https://www.geeksforgeeks.org/python-convert-two-lists-into-a-dictionary/) for helping with converting 2 lists into a dictionary
+
 # Acknowledgements
 - To Mo Shami, my mentor, for getting me through this with great advice and support
 - To the Code Institute slack community for finding out great advice, guidance and resources.
