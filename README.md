@@ -397,6 +397,15 @@ Follows same test as user story 4
 |1|Login|At welcome screen enter l to login. Enter username steve. Enter a to add a new scheduled session. Enter 10-11-2021|App response is Great! 10-11-2021 has been added to your schedule|Works as expected|
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-9.png"></details>
+<br>
+
+### 10. As a Staff Member I would like a user to only be able book on certain dates.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|Login|At welcome screen enter l to login. Enter username charlie. Enter k to select Karen. Enter 06-10-2021|App response 06-10-2021 is not available to be booked. Please try again...|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-10.png"></details>
 
 # Bugs
 - Bug:
