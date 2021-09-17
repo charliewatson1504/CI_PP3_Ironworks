@@ -388,6 +388,15 @@ Follows same test as user story 4
 |1|Login|At welcome screen enter l to login. Enter username karen. Enter s to view scheduled sessions|App displays scheduled sessions|Works as expected|
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-8.png"></details>
+<br>
+
+### 9. As a Staff Member I want to be able to add additional sessions for people to book.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|Login|At welcome screen enter l to login. Enter username steve. Enter a to add a new scheduled session. Enter 10-11-2021|App response is Great! 10-11-2021 has been added to your schedule|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-9.png"></details>
 
 # Bugs
 - Bug:
