@@ -148,6 +148,22 @@ The second option in a staff account is being able to make an additional date av
 - view scheduled sessions - takes the user to view their sessions. [Section 7](#)
 - exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
+## 9. User database
+
+This is the user google worksheet found in the ironworks google sheet. This sheet holds the usernames and the account type of 'User' or 'Staff'. It is updated when a new user account is created.
+
+## 10. Steve's schedule
+
+This is the worksheet named steve and is found in the ironworks google sheet. The sheet holds the scheduled dates and if it is 'AVAILABLE' or if a user has booked it it shows the username. The sheet is updated when a user books a new session or steve adds a new scheduled session.
+
+## 11. Karen's schedule
+
+This is the worksheet named karen and is found in the ironworks google sheet. The sheet holds the scheduled dates and if it is 'AVAILABLE' or if a user has booked it it shows the username. The sheet is updated when a user books a new session or karen adds a new scheduled session.
+
+## 12. PARQ submissions
+
+This is the parq worksheet found in the ironworks google sheet. The sheet holds the information submitted by the user when they complete the PARQ form after creating an account. The worksheet is updated once a user has completed the form in the app.
+
 <br>
 
 # Technical Design
@@ -304,6 +320,12 @@ A staff member in this section can schedule a new date for users to be able to b
 12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
 
 13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
+
+<br>
+
+## Features to be implemented at a later date
+- For all that the app functions and collects the necessary information the user accounts aren't secure. I would like to implement password protection to help resolve this issue.
+- The app does validate a lot of the users inputs however there is always room for improvement. I would like to enhance the validation of the dates a user inputs. This would limit further any errors in the data stored.
 
 <br>
 
