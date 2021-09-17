@@ -436,6 +436,15 @@ Follows same test as user story 1
 |1|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter k to book with Karen. Enter an available date with Karen. Enter e to exit|App returns to the welcome screen|Works as expected|
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-13.png"></details>
+<br>
+
+### 14. As a Site Owner I would like to get basic medical information from the user when they create a new account.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+||1|User section|At welcome screen enter c to create account. Enter fred as username. Complete parq form.|App response of fred thanks for submitting|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-14.png"></details>
 
 # Bugs
 - Bug:
