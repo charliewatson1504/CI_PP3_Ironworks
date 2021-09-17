@@ -310,7 +310,6 @@ Pylint
 |1|User section|At welcome screen enter c to create account. Enter a username. Complete parq form. Enter l to login. Enter username just created. Enter b to book a session. Enter k to book with Karen. Enter an available date with Karen.|App response of Great! "date" has been booked for you with Karen|Works as expected|
 |2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve. Enter an available date with Steve.|App response of Great! "date" has been booked for you with Steve|Works as expected|
 
-
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-1.png"></details>
 
 <details><summary>Screenshot to show user story test 2</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-2.png"></details>
@@ -322,7 +321,6 @@ Pylint
 |---|---|---|---|---|
 |1|User section|At welcome screen enter c to create account. Enter a username. Complete parq form. Enter l to login. Enter username just created. Enter b to book a session. Enter k to book with Karen.|App response of Karen selected|Works as expected|
 |2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve.|App response of Steve selected|Works as expected|
-
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-2-1.png"></details>
 
@@ -417,11 +415,20 @@ Follows same test as user story 1
 |1|User section|At welcome screen enter c to create account. Enter a username. Complete parq form. Enter l to login. Enter username just created. Enter b to book a session. Enter k to book with Karen. Enter an available date with Karen.|App response of Great! "date" has been booked for you with Karen|Works as expected|
 |2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve. Enter an available date with Steve.|App response of Great! "date" has been booked for you with Steve|Works as expected|
 
-
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-1.png"></details>
 
 <details><summary>Screenshot to show user story test 2</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-2.png"></details>
 <br>
+
+### 12. As a Site Owner I want to be able to validate all of the user input and provide feedback if input is invalid.
+
+Follows same test as user story 1
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|Welcome Screen|At welcome screen enter f which is not a stated option.|App response f is an invalid entry, please use l or c|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-12.png"></details>
 
 # Bugs
 - Bug:
