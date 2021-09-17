@@ -406,6 +406,22 @@ Follows same test as user story 4
 |1|Login|At welcome screen enter l to login. Enter username charlie. Enter k to select Karen. Enter 06-10-2021|App response 06-10-2021 is not available to be booked. Please try again...|Works as expected|
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-10.png"></details>
+<br>
+
+### 11. As a Site Owner I want users to be able to login to the system and book sessions.
+
+Follows same test as user story 1
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|User section|At welcome screen enter c to create account. Enter a username. Complete parq form. Enter l to login. Enter username just created. Enter b to book a session. Enter k to book with Karen. Enter an available date with Karen.|App response of Great! "date" has been booked for you with Karen|Works as expected|
+|2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve. Enter an available date with Steve.|App response of Great! "date" has been booked for you with Steve|Works as expected|
+
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-1.png"></details>
+
+<details><summary>Screenshot to show user story test 2</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-1-2.png"></details>
+<br>
 
 # Bugs
 - Bug:
