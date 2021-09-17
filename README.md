@@ -348,6 +348,15 @@ Pylint
 |1|Login|At welcome screen enter l to login. Enter username charlie. Enter c to go to BMI calc. Enter weight 100. Enter height 200.|App response of Your BMI score is 25.0|Works as expected|
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-4.png"></details>
+<br>
+
+### 5. As a Returning Visitor I want to be able to view the sessions I have booked.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|Login|At welcome screen enter l to login. Enter username charlie. Enter s to go to view booked sessions.|App displays booked sessions split by trainer|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-5.png"></details>
 
 # Bugs
 - Bug:
