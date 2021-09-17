@@ -24,7 +24,7 @@
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Validation](#validation)
-- [Testing](#testing)
+- [Testing](#testing-of-user-stories)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
 - [Credit](#credit)
