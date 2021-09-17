@@ -447,8 +447,18 @@ Follows same test as user story 1
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-14.png"></details>
 
 # Bugs
-- Bug:
-- Fix:
+- Bug: Not displaying validation message when an unavailable date is being entered
+- Fix: Remove not needed else statement and correctly indent print statements
+- Bug: Book function has too many vairables for Pylint
+- Fix: Split function in half
+- Bug: Unnecessary elif in various functions
+- Fix: Remove elif and correctly indent code below removed elif
+- Bug: validate_username function not working correctly
+- Fix: Add missing return value to end of function
+- Bug: validate_username only working for one of the calls not both
+- Fix: change from using while True to using a try and except which gave flexibilty to service both calls
+- Bug: book function not validating the date input
+- Fix: add validation missing from function to check date
 
 # Deployment
 
