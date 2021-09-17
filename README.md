@@ -29,12 +29,17 @@
 - [Deployment](#deployment)
 - [Credit](#credit)
 - [Acknowledgements](#acknowledgements)
+
+<br>
+
 # Project Goals
 
 To create a system for managing personal training session bookings from both a user perspective and
 a staff member perspective. The experience needs to be simple and easy follow due to this being
 run through command line only. Options need to be given to the user at all times so that they
 don't feel stuck along the way.
+
+<br>
 
 ## User Stories
 
@@ -64,6 +69,8 @@ don't feel stuck along the way.
 13. As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 14. As a **Site Owner** I would like to get basic medical information from the user when they create
 a new account
+
+<br>
 
 # User Manual
 
@@ -141,6 +148,8 @@ The second option in a staff account is being able to make an additional date av
 - view scheduled sessions - takes the user to view their sessions. [Section 7](#)
 - exit - takes user back to welcome screen. [Section 1](#1-welcome-screen)
 
+<br>
+
 # Technical Design
 
 ## Flowchart
@@ -153,6 +162,8 @@ I have used various data models within this project. A Class has been used to fo
 ## User Interface
 
 Due to the nature of this project in that the focus is on using the python there isn't much flexibility in making an aesthetically pleasing site. That being said I focused on making the system as easy to use as possible. This is done by giving simple options allowing easier interaction for the user. When more than a single option is needed I have tried to explain what exactly the user needs to enter and if a specific format is needed then show that.
+
+<br>
 
 # Technologies Used
 
@@ -183,6 +194,8 @@ Allows the application to access the google API without storing the usernames an
 
 Allows the application to access google sheets created by the site owner. Using various commands the app can open, select, create or delete worksheets. It can also get cell values, update cell values, append to whole rows, find data within a worksheet or get cell properties. This has allowed the app do everything it does as the data is stored in the google sheet and most all of the functions rely on access the worksheet.
 
+<br>
+
 # Features
 This site has 3 features
 ## Feature 1 - Create account
@@ -210,6 +223,8 @@ PARQ form is to gather some basic medical information for the personal trainer b
 12 As a **Site Owner** I want to be able to validate all of the user input and provide feedback if input is invalid.
 
 14 As a **Site Owner** I would like to get basic medical information from the user when they create a new account
+
+<br>
 
 ## Feature 2 - User account section
 User account has 3 main sections to it:
@@ -258,6 +273,8 @@ This section of the app asks the user for 2 inputs of weight and height. It then
 
 13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
+<br>
+
 ## Feature 3 - Staff account section
 Staff account has 2 main sections to it:
 
@@ -288,8 +305,10 @@ A staff member in this section can schedule a new date for users to be able to b
 
 13 As a **Site Owner** I would like users to be able to get back to the welcome screen at any point through the process.
 
+<br>
+
 # Validation
-## Validation
+
 [PEP8](http://pep8online.com/) and [Pylint](https://www.pylint.org/) have been used to validate all of the python code within the site. All files have passed with 0 errors. Click on the below to see each screenshot:
 PEP8
 1. <details><summary>run.py</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/validation/PEP8/pep8-run.png"></details>
@@ -446,6 +465,8 @@ Follows same test as user story 1
 
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-14.png"></details>
 
+<br>
+
 # Bugs
 - Bug: Not displaying validation message when an unavailable date is being entered
 - Fix: Remove not needed else statement and correctly indent print statements
@@ -459,6 +480,8 @@ Follows same test as user story 1
 - Fix: change from using while True to using a try and except which gave flexibilty to service both calls
 - Bug: book function not validating the date input
 - Fix: add validation missing from function to check date
+
+<br>
 
 # Deployment
 
@@ -494,11 +517,15 @@ more so you can look through the lirbary.
 9. Compelete the needed tasks to be performed in the documentation for the [Drive](https://developers.google.com/drive/?hl=en_GB) and [Sheets](https://developers.google.com/sheets?hl=en_GB) API.
 10. Add them to your code.
 
+<br>
+
 # Credit
 
 - This [Stack overflow](https://stackoverflow.com/questions/17330139/python-printing-a-dictionary-as-a-horizontal-table-with-headers) post for helping with displaying a dictionary as a table in the console
 - This post on [Real Python](https://realpython.com/iterate-through-dictionary-python/#filtering-items) for helping with iterating through a dictionary and filtering the values
 - This post on [geeksforgeeks](https://www.geeksforgeeks.org/python-convert-two-lists-into-a-dictionary/) for helping with converting 2 lists into a dictionary
+
+<br>
 
 # Acknowledgements
 - To Mo Shami, my mentor, for getting me through this with great advice and support
