@@ -336,10 +336,18 @@ Pylint
 |1|Login|At welcome screen enter l to login. Enter username fnergfjre.|App response of fnergfjre is not a valid username.|Works as expected|
 |2|User section|At welcome screen enter l to login. Enter username. Enter b to book a session. Enter s to book with Steve. Enter an unavailable date with Steve.|App response of |Works as expected|
 
-
 <details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-3-1.png"></details>
 
 <details><summary>Screenshot to show user story test 2</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-3-2.png"></details>
+<br>
+
+### 4. As a First Time Visitor I want to be able to check my bmi score.
+
+|Test|Feature|Action|Expected Result|Actual Result|
+|---|---|---|---|---|
+|1|Login|At welcome screen enter l to login. Enter username charlie. Enter c to go to BMI calc. Enter weight 100. Enter height 200.|App response of Your BMI score is 25.0|Works as expected|
+
+<details><summary>Screenshot to show user story test 1</summary><img src="https://github.com/charliewatson1504/CI_PP3_Ironworks/blob/main/docs/testing/user-story-4.png"></details>
 
 # Bugs
 - Bug:
